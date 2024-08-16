@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    padding-left: 50px;
+}
+.logo-containt{
+    width: 130px;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  
+  
+}
+
+.banner1{
+    width: 100%;
+    height: 10vh;
+    background-image: url('background-3.png');
+    background-size: cover;
+    background-position: center;
+}
+.navb{
+    background-color: seagreen;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 20000;
+    
+   
+  }
+  .navb .logoicon{
+    width: 150px;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-top: 14px;
+    
+}
+  /*label.logo{
+    color: white;
+    font-size: 15px;
+    
+    padding: 0 100px;
+    font-weight: bold;
+  }*/
+  .navb ul{
+    float: right;
+    margin-right: 30px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    
+  }
+  .navb li{
+    margin-right: 1px;
+    margin-top: 2px;
+    
+  }
+  .navb ul li{
+    display: inline-block;
+    text-decoration: none;
+   
+    /*margin: 0 5px;*/
+  }
+  
+  .navb ul li a{
+      color: aliceblue;
+    font-size: 15px;
+    border-radius: 25px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 12px;
+    padding-left: 12px;
+    
+    margin-left: 7px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .navb li a:hover{
+    background-color: aliceblue;
+    color: seagreen ;
+   
+   
+    transition: 0.3s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 62px;
+    margin-right: 40px;
+    
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  .btn-ulasan{
+    margin-top: 50px;
+    width: 125px;
+    color: seagreen;
+    background-color: rgb(64, 202, 124);
+    font-size: 15px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px solid seagreen;
+    background: transparent;
+    cursor: pointer;
+   }
+  .btn-ulasan:hover {
+    background-color: seagreen;
+    color: aliceblue;
+    transition: 0.3s;
+  
+  }
+  @media (max-width: 952px){
+    .navb .logo1{
+      width: 100px;
+      padding-left: 50px;
+      padding-top: 16px;
+    }
+    .navb ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(28, 41, 33);
+      top: 60px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    .navb{
+        position: fixed;
+    }
+    .navb ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    .navb ul li a{
+      font-size: 20px;
+    }
+    
+    #check:checked ~ ul{
+      left: 0;
+    }
+    
+  }
+.h {
+    width: 90%;
+    height: 7px;
+    border-radius: 30px;
+    border: 0 none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    background-color: #333;
+}
